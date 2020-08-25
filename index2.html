@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love you</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1><a href="index.html">OUR <span>LOVE</span></a></h1>
+    <br>
+    <div class="progressbar">
+        <div id="progress-bar-container">
+            <ul>
+                <li class="step step01 active">
+                    <div class="step-inner">APR</div>
+                </li>
+                <li class="step step02">
+                    <div class="step-inner">MEI</div>
+                </li>
+                <li class="step step03">
+                    <div class="step-inner">JUN</div>
+                </li>
+                <li class="step step04">
+                    <div class="step-inner">JUL</div>
+                </li>
+                <li class="step step05">
+                    <div class="step-inner">AUG</div>
+                </li>
+            </ul>
+            <div id="line">
+                <div id="line-progress">
+                </div>
+            </div>
+        </div>
+        <div id="adder">
+            <div id="progress-content-section">
+                <div class="section-content APRIL active">
+                    <img src="images/sixth.jpg" style="width:80%">
+                    <div class="text">2020 APRIL</div>
+                </div>
+                <div class="section-content MEI">
+                    <img src="images/seventh.jpg" style="width:80%">
+                    <div class="text">2019 MEI</div>
+                </div>
+                <div class="section-content JUNI">
+                    <img src="images/eight.jpg" style="width:80%">
+                    <div class="text">2020 JUNI</div>
+                </div>
+                <div class="section-content JULI">
+                    <img src="images/nineth.jpg" style="width:80%">
+                    <div class="text">2020 JULI</div>
+                </div>
+                <div class="section-content AUGUSTUS">
+                    <img src="images/tenth.jpg" style="width:80%">
+                    <div class="text">2020 AUGUSTUS</div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+$(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".APRIL").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".MEI").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".JUNI").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".JULI").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".AUGUSTUS").addClass("active").siblings().removeClass("active");
+});
+
+ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love you</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1><a href="index2.html">OUR <span>LOVE</span></a></h1>
+    <br>
+    <div class="progressbar">
+        <div id="progress-bar-container">
+            <ul>
+                <li class="step step01 active">
+                    <div class="step-inner">NOV</div>
+                </li>
+                <li class="step step02">
+                    <div class="step-inner">DEC</div>
+                </li>
+                <li class="step step03">
+                    <div class="step-inner">JAN</div>
+                </li>
+                <li class="step step04">
+                    <div class="step-inner">FEB</div>
+                </li>
+                <li class="step step05">
+                    <div class="step-inner">MAA</div>
+                </li>
+            </ul>
+            <div id="line">
+                <div id="line-progress">
+                </div>
+            </div>
+        </div>
+        <div id="adder">
+            <div id="progress-content-section">
+                <div class="section-content NOVEMBER active">
+                    <img src="images/first.jpg" style="width:80%">
+                    <div class="text">2019 NOVEMBER</div>
+                </div>
+                <div class="section-content DECEMBER">
+                    <img src="images/second.jpg" style="width:80%">
+                    <div class="text">2019 DECEMBER</div>
+                </div>
+                <div class="section-content JANUARI">
+                    <img src="images/third.jpg" style="width:80%">
+                    <div class="text">2020 JANUARI</div>
+                </div>
+                <div class="section-content FEBRUARI">
+                    <img src="images/fourth.jpg" style="width:80%">
+                    <div class="text">2020 FEBRUARI</div>
+                </div>
+                <div class="section-content MAART">
+                    <img src="images/fifth.jpg" style="width:80%">
+                    <div class="text">2020 MAART</div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+$(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".NOVEMBER").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".DECEMBER").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".JANUARI").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".FEBRUARI").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".MAART").addClass("active").siblings().removeClass("active");
+});
+
+ 
+    </script>
+</body>
+</html>

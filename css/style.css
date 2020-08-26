@@ -1,6 +1,13 @@
+@font-face{
+	font-family: 'love';
+	src: url(../font/lovelovely-bwa7b-webfont.woff);
+	font-style: normal;
+	font-weight: 100;
+}
+
 body{
+	font-family: love;
     margin: 0;
-    font-family: tahoma;
     background: #111011;
 }
 

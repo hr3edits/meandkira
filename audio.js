@@ -40,7 +40,9 @@ function update()
         }
         else {
                 song.play();
-                played = true;
+                if(isPlaying(song)){
+                    played = true;
+                }
         }
     }
 

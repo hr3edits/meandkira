@@ -174,4 +174,16 @@ h1 a{
 .textfoto{
 	color: white;
 }
-
+img{
+	width: 100%;
+}
+@media (min-width:1025px){
+	img{
+		width: 40%;
+		
+	}
+	.progressbar{
+		width: 50%;
+		margin: auto;
+	}
+}
